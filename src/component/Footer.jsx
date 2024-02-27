@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <div style={footerStyle}>
       <span style={{ marginRight: '5px' }}>© 2024 Noy Raichman</span>
-      <a href="https://github.com/noy2611/Assignment_3" rel="noopener noreferrer">
+      <a href="https://github.com/noy2611/React_Assignment3" rel="noopener noreferrer">
         <GitHubIcon style={iconStyle} />
       </a>
     </div>
