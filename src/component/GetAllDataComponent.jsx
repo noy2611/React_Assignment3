@@ -33,8 +33,8 @@ const GetAllDataComponent = () => {
       try {
         console.log("Fetching data...");
         const response = await getAllPlans();
-        console.log("Fetched plans:", response); // Log the entire response object
-        setPlans(response.data); // Update to access response.data
+        console.log("Fetched plans:", response); 
+        setPlans(response.data); 
       } catch (error) {
         setError(error.message || "Error fetching plans");
       } finally {
