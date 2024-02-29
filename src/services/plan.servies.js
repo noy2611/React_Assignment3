@@ -5,7 +5,7 @@ const baseURL = "https://assignment2-server-cdgy.onrender.com";
 
 const instance = axios.create({
   baseURL,
-  timeout: 10000, 
+  timeout: 20000, 
 });
 
 export const getAllPlans = async () => {
@@ -25,6 +25,26 @@ export const getPlanById = async (id) => {
       return response.data;
     } catch (error) {
       console.error(`Error fetching plan with ID ${id}:`, error.message);
+      throw error;
+    }
+  };
+
+  export const createPlan = async (newPlan) => {
+    try {
+      const response = await instance.post("/plan", newPlan);
+      return response.data;
+    } catch (error) {
+      console.error("Error creating plan:", error.message);
+      throw error;
+    }
+  };
+
+  export const deletePlanById = async (id) => {
+    try {
+      const response = await instance.delete(`/plan/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error(`Error deleting plan with ID ${id}:`, error.message);
       throw error;
     }
   };

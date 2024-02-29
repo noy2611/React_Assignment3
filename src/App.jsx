@@ -48,7 +48,7 @@ function App() {
     flexDirection: 'column',
     height: '100vh',
     alignItems: 'center',
-    minHeight: '100vh',
+    // minHeight: '100vh',
   };
 
   return (
