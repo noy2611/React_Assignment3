@@ -4,14 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from "./component/Header";
 import Footer from "./component/Footer";
-
+// import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import GetAllDataComponent from './component/GetAllDataComponent';
 import GetByIdDataComponent from './component/GetPlanByIDComponent';
 import UpdateDataComponent from './component/UpdatePlanComponent';
 import CreateNewDataComponent from './component/CreatePlanComponent ';
 // import DeleteByIdDataComponent from './component/DeletePlanComponent  ';
 import DeleteByIdDataComponent from './component/DeletePlanComponent';
-
+// import PlanServer from './services/plan.servies';
 
 
 
@@ -47,17 +48,24 @@ function App() {
     flexDirection: 'column',
     height: '100vh',
     alignItems: 'center',
+    minHeight: '100vh',
   };
 
   return (
+    <Router>
     <div style={containerStyle}>
     <h1>Welcome to my plans evacuation</h1>
+    
     <Header onButtonClick={(component) => setSelectedComponent(component)} />
-
-    {renderSelectedComponent()}
+    {/* <Route path="/plan" element={<GetAllDataComponent/>} /> */}
+        
+        
+           {/* Render the selected component */}
+           {renderSelectedComponent()}
+        
       <Footer />
   </div>
-
+</Router>
   )
 
 
