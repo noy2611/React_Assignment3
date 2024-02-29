@@ -48,3 +48,14 @@ export const getPlanById = async (id) => {
       throw error;
     }
   };
+
+export const updatePlan = async (id, updatedPlan) => {
+    try {
+      const response = await instance.put(`/plan/${id}`, updatedPlan);
+      return response.data;
+    } catch (error) {
+      console.error(`Error updating plan with ID ${id}:`, error.message);
+      throw error;
+    }
+  };
+  
