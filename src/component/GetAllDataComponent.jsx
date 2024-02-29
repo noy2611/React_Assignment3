@@ -17,9 +17,9 @@ const cardStyle = {
 };
 const idStyle = {
   fontWeight: 'bold',
-  textAlign: 'center', // Center text inside the card
-  marginBottom: '8px', // Add some space between ID and other details
-  color: 'white', // Set text color to white
+  textAlign: 'center', 
+  marginBottom: '8px', 
+  color: 'white', 
 };
 
 
@@ -54,33 +54,9 @@ const GetAllDataComponent = () => {
   }
 
   return (
-    // <div>
-    //   {/* Render your plans */}
-    //   {plans.map((plan) => (
-    //     // <div key={plan.id}>
-    //     //   <p>ID: {plan.id}</p>
-    //     //   <p>Name: {plan.name}</p>
-    //     //   <p>Location: {plan.location}</p>
-    //     //   <p>Details: {plan.details}</p>
-    //     // </div>
-    //   ))}
-    // </div>
-  
-  //   <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-  //   {/* Render your plans */}
-  //   {plans.map((plan, index) => (
-  //     <Card key={plan.id} style={{ margin: '10px', width: '200px', flexBasis: 'calc(33.33% - 20px)' }}>
-  //       <CardContent>
-  //         <p style={{ fontWeight: 'bold' }}>ID: {plan.id}</p>
-  //         <p style={{ fontWeight: 'bold' }}>Name: {plan.name}</p>
-  //         <p style={{ fontWeight: 'bold' }}>Location: {plan.location}</p>
-  //         <p style={{ fontWeight: 'bold' }}>Details: {plan.details}</p>
-  //       </CardContent>
-  //     </Card>
-  //   ))}
-  // </div>
+   
 <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      {/* Render your plans */}
+      
       {plans.map((plan) => (
         <Card key={plan.id} style={cardStyle}>
           <CardContent style={{ color: 'white' }}>
