@@ -30,5 +30,8 @@ Before running the application, ensure you have the following dependencies:
    ```bash
    cd React_Assignment3
 
-Install dependencies: npm install
-Run the application: npm run dev
+3. **Install dependencies:**
+ npm install
+ 
+4. **Run the application:**
+ npm run dev
