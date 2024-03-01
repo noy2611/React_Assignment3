@@ -1,10 +1,7 @@
-// GetAllDataComponent.jsx
 import React, { useState, useEffect } from "react";
 import { getAllPlans } from "../services/plan.servies";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-
-
 
 const cardStyle = {
   margin: '10px',
@@ -21,7 +18,6 @@ const idStyle = {
   marginBottom: '8px', 
   color: 'white', 
 };
-
 
 const GetAllDataComponent = () => {
   const [plans, setPlans] = useState([]);

@@ -15,7 +15,6 @@ const Footer = () => {
     margin: '0 5px',
     verticalAlign: 'middle',
   };
-
   return (
     <div style={footerStyle}>
       <span style={{ marginRight: '5px' }}>© 2024 Noy Raichman</span>

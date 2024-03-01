@@ -1,12 +1,7 @@
 
-// export default Header;
-
-
 import React, { useState } from 'react';
-
 const Header = ({ onButtonClick }) => {
   const [hoveredButton, setHoveredButton] = useState(null);
-
   const centerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -83,3 +78,5 @@ const Header = ({ onButtonClick }) => {
 };
 
 export default Header;
+
+

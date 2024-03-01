@@ -24,16 +24,11 @@ Before running the application, ensure you have the following dependencies:
 
 ## Installation
 
-1. Clone the repository:
+1. **Download the code.**
 
+2. **Navigate to the project directory:**
    ```bash
-   git clone https://github.com/noy2611/React_Assignment3.git
+   cd React_Assignment3
 
-2. Navigate to the project directory:
-cd React_Assignment3
-
-3. Install dependencies:
-npm install
-
-
-
+Install dependencies: npm install
+Run the application: npm run dev

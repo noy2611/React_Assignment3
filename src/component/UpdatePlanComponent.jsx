@@ -49,7 +49,6 @@ const UpdatePlanComponent = () => {
       };
 
       const response = await updatePlan(id, updatedPlan);
-
       if (response) {
         setSuccessMessage("Plan updated successfully!");
       } else {
@@ -64,7 +63,7 @@ const UpdatePlanComponent = () => {
 
   return (
     <div style={{ padding: '40px', border: '2px solid #ccc', borderRadius: '20px', margin: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backdropFilter: 'blur(10px)', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
-      <h2 style={{ marginBottom: '20px' }}>Update Plan</h2>
+      <h2 style={{ marginBottom: '20px' }}> Please enter ID plan</h2>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
         <form style={{ marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
           <label style={{ marginBottom: '20px', width: '20vw' }}>
@@ -75,7 +74,6 @@ const UpdatePlanComponent = () => {
           </button>
         </form>
       </div>
-
       {loading && <div>Loading...</div>}
       {error && <div style={{ color: 'red' }}>Error: {error}</div>}
       {name && (
@@ -98,8 +96,6 @@ const UpdatePlanComponent = () => {
     </button>
   </div>
 )}
-
-
       {successMessage && (
         <div style={{ color: 'green', fontWeight: 'bold', marginTop: '10px' }}>
           {successMessage}
