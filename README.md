@@ -8,6 +8,10 @@ This project is a React application designed to interact with the server-side ap
 
 ## Features
 
+- **Get All Plans:** Retrieve information about all available evacuation plans.
+
+- **Get Plan by ID:** Access details for a specific plan based on its unique identifier.
+
 - **Create Evacuation Plans:** Users can add new evacuation plans by providing details such as name, location, and additional information.
 
 - **View Evacuation Plans:** Retrieve information about all plans or access details for a specific plan based on its unique identifier.
@@ -32,6 +36,6 @@ Before running the application, ensure you have the following dependencies:
 
 3. **Install dependencies:**
  npm install
- 
+
 4. **Run the application:**
  npm run dev
